@@ -1,0 +1,57 @@
+{
+  "name": "backup-manager/backup-manager",
+  "description": "A framework agnostic database backup manager with user-definable procedures and support for S3, Dropbox, FTP, SFTP, and more with drivers for popular frameworks.",
+  "authors": [
+    {
+      "name": "Shawn McCool",
+      "email": "shawn@heybigname.com",
+      "homepage": "http://heybigname.com/"
+    },
+    {
+      "name": "Mitchell van Wijngaarden",
+      "email": "mitchell@kooding.nl",
+      "homepage": "http://heybigname.com/"
+    }
+  ],
+  "require": {
+    "php": "^5.5.9 || ^7.0",
+    "symfony/process": "^2.1 || ^3.0 || ^4.0",
+    "league/flysystem": "^1.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "~0.9",
+    "satooshi/php-coveralls": "~0.6",
+    "league/flysystem-aws-s3-v3": "~1.0",
+    "league/flysystem-dropbox": "~1.0",
+    "srmklive/flysystem-dropbox-v2": "~1.0",
+    "league/flysystem-rackspace": "~1.0",
+    "league/flysystem-sftp": "~1.0",
+    "mhetreramesh/flysystem-backblaze" : "~1.0",
+    "superbalist/flysystem-google-storage": "^7.0",
+    "dropbox/dropbox-sdk": "~1.1",
+    "aws/aws-sdk-php": "~3.0",
+    "phpspec/phpspec": "~2.1"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "suggest": {
+    "mhetreramesh/flysystem-backblaze": "B2 adapter support.",
+    "league/flysystem-aws-s3-v3": "AWS S3 adapter support.",
+    "superbalist/flysystem-google-storage": "Google Cloud Storage adapter support.",
+    "srmklive/flysystem-dropbox-v2": "Dropbox API v2 adapter support.",
+    "league/flysystem-rackspace": "Rackspace adapter support.",
+    "league/flysystem-sftp": "SFTP adapter support."
+  },
+  "autoload": {
+    "psr-4": {
+      "BackupManager\\": "src/"
+    }
+  },
+  "license": "MIT",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}

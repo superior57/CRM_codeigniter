@@ -1,0 +1,28 @@
+{
+    "name": "zbateson/mail-mime-parser",
+    "description": "MIME email message parser",
+    "keywords": ["email", "mail", "mime", "parser", "php-imap"],
+    "homepage": "https://github.com/zbateson/MailMimeParser",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Zaahid Bateson",
+            "email": "zbateson@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5.0",
+        "phing/phing": "~2.15.0",
+        "phpdocumentor/phpdocumentor": "~2.8.0"
+    },
+    "autoload": {
+        "psr-4": {"ZBateson\\MailMimeParser\\": "src/"}
+    },
+    "autoload-dev": {
+        "classmap": ["tests/MailMimeParser/"]
+    }
+}
